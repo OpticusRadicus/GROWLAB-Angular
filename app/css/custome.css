@@ -1,0 +1,181 @@
+body {
+    font-size: 1.5em;
+    line-height: 1.4;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+	margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+	height: 142px; 
+}
+.site-footer {
+  background: orange;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  background-color: #2A2929;
+}
+
+.footer ul li, h3 {
+	color: #fff;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+
+
+/*Image sizers*/
+
+
+.img100 {
+  width: 100%;
+  margin-top: -20px;
+  
+  z-index: 0;
+}
+
+.sociaIcons	{
+
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+.sociaIcons ul li {
+	display: inline;
+}
+
+/*Flex Centering*/
+
+
+
+main {
+  
+  margin: 0px 0;
+  padding: 20px;
+}
+
+main div {
+  background: black;
+  color: white;
+  padding: 15px;
+  width: auto;
+  /*max-width: 125px;*/
+  margin: 5px;
+}
+
+.inline-block-center {
+  text-align: center;
+}
+.inline-block-center div {
+  display: inline-block;
+  text-align: left;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.NoGutter {
+	padding-right: -10px;
+	padding-left: 0;
+}
+
+.site-wrapper {
+/* display: table; */
+/* position: relative; */
+width: 102%;
+height: 100%;
+/* margin: 0 auto; */
+margin-left: -15px;
+margin-top: -30px;
+padding: 0;
+-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+
+.imageHolder .caption {
+	list-style: none;
+}
+
+
+.imageHolder { position: relative; 
+	width: auto;  
+} 
+
+.trailerOneImg {
+	background: url(img/Growlab-large-pic-15ft-trailer.png);
+}
+.trailerTwoImg {
+	background: url(img/Growlab-large-pic-20ft-trailer.png);
+}
+
+.trailerThreeImg {
+	background: url(img/Growlab-large-pic-30ft-trailer.jpg);
+}
+
+.imageHolder .caption { 
+ opacity: 0;
+ position: absolute;
+ width: 350px; 
+ height: 300px;
+ top: -5px;
+ left: 15px; 
+ padding: 2px 0px; 
+ color: black; 
+ background: rgb(158, 178, 57);
+ text-align: center; 
+ font-weight:bold; } 
+ .imageHolder:hover .caption { background-size: 100%; opacity: .7;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out; } 
+
+/*Small browser drop down nav css overide*/
+
+.navbar-nav {
+margin: 7.5px -15px;
+background-color: #222222;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+border-color: #101010;
+/*background-color: #222222;*/
+}
+
+.navbar-form {
+border-color: #101010;
+background-color: #222222;
+}
+
+
+
