@@ -19,9 +19,7 @@ body {
   /* .push must be the same height as footer */
 	height: 142px; 
 }
-.site-footer {
-  background: orange;
-}
+
 
 html {
   position: relative;
@@ -31,19 +29,75 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+/*Footer country*/
+
+.navbar-fixed-bottom {
+    margin-top: 20px;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: static;
+}
+.navbar-fixed-bottom {
+    bottom: 0;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    left: 0;
+    margin-bottom: 0;
+    right: 0;
+    z-index: 1030;
+}
+.navbar {
+    overflow: visible;
+}
+
+#footer_body ul li {
+	display: inline;
+}
+
+.nav > li > a {
+position: relative;
+display: inline-flex;
+padding: 10px 15px;
+}
+
+/*Old footer*/
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
+  color:#fff;
   height: auto;
   background-color: #2A2929;
 }
 
-.footer ul li, h3 {
-	color: #fff;
+@media (max-width: 760px) {
+
+	.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color:#fff;
+  height: auto;
+  background-color: #2A2929;
+  margin-bottom: -100px;
+}
 }
 
+.footer ul, ol {
+margin-top: 0;
+margin-bottom: 10px;
+margin-left: -30px;
+}
+/*.footer h3 {
+	color: #fff;
+	text-align: center;
+	margin-left: 30px;
+}
+
+.footer ul li {
+	color: #fff; text-align: center;
+}*/
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
@@ -70,6 +124,7 @@ text-align: center;
 
 .sociaIcons ul li {
 	display: inline;
+	text-align: center;
 }
 
 /*Flex Centering*/
