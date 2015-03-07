@@ -3,6 +3,8 @@ body {
     line-height: 1.4;
     width: 100%;
     overflow-x: hidden;
+    font-family: "Helvetica35Thin";
+  font-weight: thin;
 
 }
 
@@ -275,14 +277,28 @@ border-color: #101010;
 
 @media (max-width:1600px) {
   .carousel {
-  width: 50%;
+  /* width: 50%; */
   }
  } 
 
-@media (max-width:600px) {
+@media (max-width:770px) {
   .carousel {
   width: 100%;
   }
+
+  .rowBigBottomMargin {
+  margin-bottom: 400px;
+}
  } 
 
 
+.DescriptionBold {
+  font-family: "Helvetica35Thin";
+  font-size: 1.7em;
+  font-weight: bolder;
+
+}
+
+
+  
+  
