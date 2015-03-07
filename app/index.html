@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>GROW LAB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+ <!--  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -13,11 +13,13 @@
   <link rel="stylesheet" href="css/sticky-nav.css">
   <link rel="stylesheet" href="css/bjqs.css">
   <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/leaves.css">
   <link rel="stylesheet" href="css/custome.css">
+  
 
 <!-- ngDialog css below -->
 
-  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
@@ -28,11 +30,17 @@
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/docs.min.js"></script>
   <script src="js/jquery-scrolltofixed.js"></script>
 <!-- Floating sticky top Nav script below -->
   <script src="js/scrollToFixed.js"></script>
   <script src="js/bjqs-1.3.js"></script>
+
+
+
+  
 </head>
+
 <body>
 
 <div ng-controller='ListCtrl'><img class="img100" ng-src="{{ Banner.imageUrl }}" alt="">
@@ -57,6 +65,7 @@
             <li><a href="#/homebase">HomeBase</a></li>
             <li><a href="#/mission">Our Mission</a></li>
             <li><a href="#/contact">Contact</a></li>
+            <li><a href="#/warranty">Warranty</a></li>
             <li> <form class="navbar-form navbar-right">
             <input ng-model="query" class="form-control" placeholder="Search...">
           </form></li>
@@ -80,32 +89,38 @@
 <footer class="footer navbar navbar-fixed-bottom" data-target="navbar-collapse-bottom">
   <div class="row">
 
-    <div class="col-md-3 col-sm-4 col-sm-2 sociaIcons">
+    <div class="col-md-3 col-sm-4 col-sm-3 sociaIcons">
     <h3 class="text-center">ABOUT</h3>
       <ul>
       <hr>
-        <li>Our Mission.</li>
-        <li>About Us.</li>
-        <li>Experience</li>
+        <a href="#/mission"><li>Our Mission</li></a>
+        <p>-</p>
+        <a href=""><li>About Us</li></a>
+        <p>-</p>
+        <a href=""><li>Experience</li></a>
       </ul>
     </div><!-- End Col -->
   
-    <div class="col-md-3 col-sm-4 col-sm-2 sociaIcons">
+    <div class="col-md-3 col-sm-4 col-sm-3 sociaIcons">
   <h3 class="text-center">CONTACT</h3>
       <ul>
       <hr>
-        <li>Email us.</li>
-        <li>Talk on the Phone.</li>
-        <li>Snail Mail</li>
+        <a href="#/contact"><li>Email us</li></a>
+        <p>-</p>
+        <a href="#/homebase"><li>Home</li></a>
+        <p>-</p>
+        <!-- <a href=""><li>Snail Mail</li></a> -->
       </ul>
     </div><!-- End Col -->
-<div class="col-md-3 col-sm-4 col-sm-2 sociaIcons">
+<div class="col-md-3 col-sm-4 col-sm-3 sociaIcons">
   <h3>PRODUCTS</h3>
       <ul>
       <hr>
-        <li>20 foot Trailer.</li>
-        <li>15 foot Trailer.</li>
-        <li>Custom Trailers</li>
+        <a href="#/Product1"><li>20 foot Trailer</li></a>
+        <p>-</p>
+        <a href=""><li>15 foot Trailer</li></a>
+        <p>-</p>
+        <a href=""><li>Custom Trailers</li></a>
       </ul>
     </div><!-- End Col -->
 

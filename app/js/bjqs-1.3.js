@@ -42,7 +42,7 @@
 
             // interaction values
             keyboardnav     : true,     // enable/disable keyboard navigation
-            hoverpause      : true,     // enable/disable pause slides on hover
+            hoverpause      : false,     // enable/disable pause slides on hover
 
             // presentational options
             usecaptions     : false,     // enable/disable captions using img title attribute

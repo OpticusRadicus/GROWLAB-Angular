@@ -14,16 +14,18 @@ pre + h2{
 }
 
 #container {
-width: 101%;
-margin: -18px auto;
-margin-left: -15px;
+width: 102%;
+margin-left: -9px;
+/*margin-left: -15px;*/
 
 }
 
 #banner-fade,
 #banner-slide{
 	margin-bottom: 30px;
-	width: inherit;
+	margin-top: -30px;
+	width: 100%;
+	
 }
 
 ul.bjqs-controls.v-centered li a{

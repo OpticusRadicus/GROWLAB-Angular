@@ -20,6 +20,12 @@ phonecatApp.config(['$routeProvider',
           when('/contact', {
         templateUrl: 'partials/contact.html'
       }). 
+          when('/warranty', {
+        templateUrl: 'partials/warranty.html'
+      }). 
+           when('/Product1', {
+        templateUrl: 'partials/Product1.html'
+      }). 
       otherwise({
         redirectTo: '/homebase.html'
       });
