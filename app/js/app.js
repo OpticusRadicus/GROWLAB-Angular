@@ -27,7 +27,7 @@ phonecatApp.config(['$routeProvider',
         templateUrl: 'partials/Product1.html'
       }). 
       otherwise({
-        redirectTo: '/homebase.html'
+        redirectTo: '/homebase'
       });
   }]);
 
