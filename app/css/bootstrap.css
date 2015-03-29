@@ -3892,6 +3892,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   /* line-height: 9em; */
   z-index: 900000000000;
+  height: 30px;
   margin-top: 20px;
 }
 .nav > li > a {
@@ -4148,6 +4149,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
+  /* margin-bottom: -55px; */
+  height: 100PX;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,

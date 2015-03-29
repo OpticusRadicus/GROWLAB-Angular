@@ -10,16 +10,11 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/carousel.css">
- <!--  <link rel="stylesheet" href="css/sticky-nav.css"> -->
-
- 
   
   <link rel="stylesheet" href="css/custome.css">
-  
-
-<!-- ngDialog css below -->
-
+  <link rel="stylesheet" href="css/demo.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
@@ -31,6 +26,10 @@
   <script src="js/services.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/docs.min.js"></script>
+  <script src="js/jquery.scrollbox.js"></script>
+  
+
+
 
 
   
@@ -54,16 +53,14 @@
 <div class="navTopContainer">
 
 <div class="NavTopRightBox inline">
-  
   <ul>
    <li>test2</li>
    <li>test2</li>
    <li>test2</li>
  </ul>
-
 </div>
+
 <div class="NavTopLeft">
-  
  <ul>
    <li>REQUEST A QUOTE</li>
    <li>CONTACT US</li>
@@ -71,13 +68,8 @@
 </div>
 <!-- end nav top left -->
 
-
-
-
-</div>
+  </div>
 <!-- end nav top container -->
-
-<!-- end nav bottom right -->
 
 <!-- Top NavBar -->
 <div class="NavBottomRightBox">
@@ -183,6 +175,60 @@
 <!-- End Sticky Footer -->
 
 
+ <script>
+$(function () {
+  $('#demo1').scrollbox();
+  $('#demo2').scrollbox({
+    linear: true,
+    step: 1,
+    delay: 0,
+    speed: 100
+  });
+  $('#demo3').scrollbox({
+    switchItems: 5,
+    distance: 144
+  });
+  $('#demo4').scrollbox({
+    direction: 'h',
+    switchItems: 5,
+    distance: 670
+  });
+  $('#demo5').scrollbox({
+    direction: 'h',
+    distance: 134
+  });
+  $('#demo5-backward').click(function () {
+    $('#demo5').trigger('backward');
+  });
+  $('#demo5-forward').click(function () {
+    $('#demo5').trigger('forward');
+  });
+  $('#demo6').scrollbox({
+    direction: 'h',
+    distance: 134,
+    queue: 'demo6-queue'
+  });
+  var queueNext = 7;
+  (function () {
+    $('#demo6-queue ul').append('<li><p>'+ queueNext +'</p></li>');
+    queueNext++;
+    setTimeout(arguments.callee, 2000 + parseInt(Math.random() * 2000, 10));
+  }());
+
+  $('#demo7').scrollbox({
+    linear: true,
+    delay: 0,
+    speed: 60,
+    autoPlay: false,
+    onMouseOverPause: false
+  });
+  $('#demo7-forward').mouseover (function () {
+    $('#demo7').trigger('forwardHover');
+  }).mouseout(function() {
+    $('#demo7').trigger('pauseHover');
+  });
+});
+</script>
 
 
 </body>
