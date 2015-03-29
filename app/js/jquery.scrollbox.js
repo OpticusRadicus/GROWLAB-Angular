@@ -20,7 +20,7 @@ $.fn.scrollbox = function(config) {
     switchItems: 1,         // Items to switch after each scroll event
     direction: 'vertical',
     distance: 'auto',
-    autoPlay: true,
+    autoPlay: false,
     onMouseOverPause: true,
     paused: false,
     queue: null,
