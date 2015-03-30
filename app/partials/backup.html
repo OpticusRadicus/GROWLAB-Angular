@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+  <meta charset="utf-8">
+  <title>GROW LAB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  
+  <link rel="stylesheet" href="css/custome.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/docs.min.js"></script>
+  <script src="js/jquery.scrollbox.js"></script>
+  
+
+
+
+
+  
+</head>
+
+<body>
+
+<!-- <div ng-controller='ListCtrl'>  
+
+<img class="img100" ng-src="{{ Banner.imageUrl }}" alt="">
+ <p>{{ Banner.name }}</p> 
+  
+</div> 
+-->
+
+
+
+<!-- NavBar Main Wrapper --> 
+<div class="mainNavBarWrapper">
+
+<div class="navTopContainer">
+
+<div class="NavTopRightBox inline">
+  <ul>
+   <li>test2</li>
+   <li>test2</li>
+   <li>test2</li>
+ </ul>
+</div>
+
+<div class="NavTopLeft">
+ <ul>
+   <li>REQUEST A QUOTE</li>
+   <li>CONTACT US</li>
+ </ul>
+</div>
+<!-- end nav top left -->
+
+  </div>
+<!-- end nav top container -->
+
+<!-- Top NavBar -->
+<div class="NavBottomRightBox">
+  <h2>FIND A LOCATION</h2>
+
+</div>
+<nav class="navbar navbar-wrap navbar-inverse header ">
+      <div class="container-fluid heightTall">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="" href="#/homebase"><img src="img/Grow-Lab-Little-Logo.png"></a>
+        </div>
+
+      
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right NavBkColor">
+            <li><a href="#/homebase">HomeBase</a></li>
+            <li><a href="#/mission">Our Mission</a></li>
+            <li><a href="#/contact">Contact</a></li>
+            <li><a href="#/warranty">Warranty</a></li>
+        
+          </ul>
+       
+        </div>
+
+
+
+      
+      </div>
+
+    </nav>
+
+<!-- end Top navbar -->
+
+
+
+</div> 
+<!-- MainNavBarWrapper END -->
+
+
+<!-- Dynamic View -->
+  <div class="view-container">
+    <div ng-view class="view-frame container-fluid"></div>
+  </div>
+<!-- End Dynamic View -->
+
+
+<!-- Bottom sticky Footer -->
+<footer class="footer navbar navbar-fixed-bottom" data-target="navbar-collapse-bottom">
+  <div class="row">
+
+    <div class="col-md-3 col-sm-4 col-sm-3 sociaIcons">
+    <h3 class="text-center">ABOUT</h3>
+      <ul>
+      <hr>
+        <a href="#/mission"><li>Our Mission</li></a>
+        <p>-</p>
+        <a href=""><li>About Us</li></a>
+        <p>-</p>
+        <a href=""><li>Experience</li></a>
+      </ul>
+    </div><!-- End Col -->
+  
+    <div class="col-md-3 col-sm-4 col-sm-3 sociaIcons">
+  <h3 class="text-center">CONTACT</h3>
+      <ul>
+      <hr>
+        <a href="#/contact"><li>Email us</li></a>
+        <p>-</p>
+        <a href="#/homebase"><li>Home</li></a>
+        <p>-</p>
+        <!-- <a href=""><li>Snail Mail</li></a> -->
+      </ul>
+    </div><!-- End Col -->
+<div class="col-md-3 col-sm-4 col-sm-3 sociaIcons">
+  <h3>PRODUCTS</h3>
+      <ul>
+      <hr>
+        <a href="#/Product1"><li>20 foot Trailer</li></a>
+        <p>-</p>
+        <a href=""><li>15 foot Trailer</li></a>
+        <p>-</p>
+        <a href=""><li>Custom Trailers</li></a>
+      </ul>
+    </div><!-- End Col -->
+
+  <div class="sociaIcons">
+     <ul>
+       <li><a href="https://facebook.com/Grow.Lab.USA"><img src="img/Facebook-social-logo.png" alt=""></a></li>
+
+       <li><a href="https://twitter.com/GROWLABUSA"><img src="img/Twitter-social-logo.png" alt=""></a></li>
+
+       <li><a href="https://www.pinterest.com/growlabusa/"><img src="img/2-Pinterest-social-logo.png" alt=""></a></li>
+     </ul>
+    </div><!-- End Col -->
+  </div><!-- End Row -->
+</footer>
+<!-- End Sticky Footer -->
+
+
+
+
+</body>
+</html>
