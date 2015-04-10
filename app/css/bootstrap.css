@@ -13,7 +13,7 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 article,
 aside,
@@ -3894,7 +3894,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   /* line-height: 9em; */
   z-index: 900000000000;
-  height: 30px;
+  /* height: 30px; */
   margin-top: 20px;
 }
 .nav > li > a {
@@ -4152,7 +4152,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-left: -15px;
   /* margin-bottom: -55px; */
-  height: 100PX;
+  height: auto;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,

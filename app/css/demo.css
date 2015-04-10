@@ -32,12 +32,13 @@ h1, h2, h3 {
 }
 .scroll-img ul {
   width: 700px;
-  height: 600px;
+  height: inherit;
   margin: 0;
 }
 .scroll-img ul li {
   display: inline-block;
-  margin: 10px 0 10px 10px;
+  /* margin: 10px 0 10px; */
+  padding-right: 10px;
 }
 #demo4.scroll-img ul,
 #demo5.scroll-img ul {

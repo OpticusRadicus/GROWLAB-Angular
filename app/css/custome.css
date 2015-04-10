@@ -213,7 +213,26 @@ main div {
 #banner-fade .bjqs {
   height: 650px;
 }
+
+
+.centerMe {
+  /* border: 1px solid red; */
+ 
+  /* padding: 0 !important; */
+ 
+  padding-left: 60px;
+  /* width: 120%; */
+  /* margin-left: -20px; */
 }
+
+.scroll-img ul li {
+  display: inline-block;
+  margin: 0px 0 10px 0px;
+}
+
+
+}
+
 
 
 
@@ -249,7 +268,40 @@ background-color: #222222;
   .rowBigBottomMargin {
   margin-bottom: 400px;
 }
+
+.scroll-img {
+  /* border: 1px solid red; */
+  width: auto;
+
+}
+
+
+
  } 
+ /*end media query*/
+
+@media (max-width:996px) {
+
+.scroll-img {
+  /* border: 1px solid red; */
+   width: 120% !important; 
+
+}
+
+
+
+ } 
+ /*end media query*/
+
+
+
+
+
+
+
+
+
+
 
 
 .DescriptionBold {
@@ -423,7 +475,7 @@ padding: 0;
 }
   
 .heightTall {
-  height: 90px;
+  /* height: 90px; */
 }
 
 
@@ -452,7 +504,7 @@ padding: 0;
 }
 
 .BtnMarginTop {
-  margin-top: 10px;
+  /* margin-top: 10px; */
  
   /* float: left; */
   /* padding: 70px; */
