@@ -57,6 +57,7 @@ html {
   background-color: #2A2929;
   margin-bottom: -100px;
 }
+
 }
 
 .footer ul, ol {
@@ -231,6 +232,9 @@ main div {
 }
 
 
+
+
+
 }
 
 
@@ -275,7 +279,12 @@ background-color: #222222;
 
 }
 
+.NavBkColor {
 
+  
+   margin-left: 0%; 
+
+}
 
  } 
  /*end media query*/
@@ -288,7 +297,9 @@ background-color: #222222;
 
 }
 
-
+.navbar-nav > li > a {
+  font-size: .8em;
+}
 
  } 
  /*end media query*/
@@ -421,6 +432,10 @@ float: right;
   z-index: 300000000;
 
   /* width: 500px; */
+
+  margin-left: 10%;
+
+  margin-right: 0%;
 
   position: relative;
 
