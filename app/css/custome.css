@@ -65,18 +65,6 @@ margin-top: 0;
 margin-bottom: 10px;
 margin-left: -30px;
 }
-/*.footer h3 {
-  color: #fff;
-  text-align: center;
-  margin-left: 30px;
-}
-
-.footer ul li {
-  color: #fff; text-align: center;
-}*/
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
 
 
 
@@ -275,7 +263,7 @@ background-color: #222222;
 
 .scroll-img {
   /* border: 1px solid red; */
-  width: auto;
+  /*width: auto;*/
 
 }
 
@@ -293,7 +281,8 @@ background-color: #222222;
 
 .scroll-img {
   /* border: 1px solid red; */
-   width: 120% !important; 
+   
+  width: 117% !important; 
 
 }
 
