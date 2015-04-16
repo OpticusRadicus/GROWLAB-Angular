@@ -752,13 +752,14 @@ float: left;
 
 
 .logoLocater  {
-  position: static;
+  position: relative;
   top: 0;
-  left: 10px;
+  left: 60px;
+  z-index: 900000000000;
   /* margin: 0 auto; */
   
   margin-left: 7%;
-  display: none;
+  /* display: none; */
   margin-bottom: 4%;
 }
 
@@ -788,7 +789,7 @@ float: left;
   position: relative;
   float: right;
   padding: 9px 10px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-right: 5%;
   margin-bottom: 8px;
   background-color: transparent;
