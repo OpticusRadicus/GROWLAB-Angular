@@ -299,9 +299,9 @@ background-color: #222222;
 
   /* margin-left: 5%; */
 
-  /* margin-top: 5%; */
+  margin-top: 5%;
 
-  margin-right: 0%;
+  margin-right: 30%;
 
   position: relative;
 
@@ -911,7 +911,7 @@ margin: 0;
 
 .colorGrean {
   background-color: green;
-  height: 350px;
+  height: 395px;
   /* margin-right: 1px; */
   /* border-bottom-style: inset; */
   /* border-bottom-width: thick; */
