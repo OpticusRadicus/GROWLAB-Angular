@@ -66,6 +66,13 @@
 </div>
 
 
+<!-- Jquery collapse function for mobile nav bar below -->
+<script>$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});</script>
+
 <div class="col-lg-2 col-md-2 col-sm-5 col-sm-4 col-xs-6">
 <div class="NavTopRightBox inline">
   <ul>
