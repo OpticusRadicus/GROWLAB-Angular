@@ -1593,17 +1593,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    /* width: 550px; */
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 620px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1470px;
   }
 }
 .container-fluid {
@@ -5353,6 +5353,8 @@ a.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+  /* width: 100%; */
+  /* margin: 0 auto; */
 }
 .panel-heading {
   padding: 10px 15px;

@@ -523,7 +523,7 @@ float: left;
 .scroll-img {
   /* border: 1px solid red; */
    
-  width: 117% !important; 
+  /* width: 117% !important; */ 
 
 }
 
@@ -802,7 +802,7 @@ float: left;
 
 .scroll-img {
   /* border: 1px solid red; */
-  width: 117% !important;
+  /* width: 117% !important; */
 }
 
 } /*end 500 media query*/
