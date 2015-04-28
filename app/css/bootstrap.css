@@ -1603,7 +1603,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1470px;
+    width: auto;
   }
 }
 .container-fluid {
@@ -4572,7 +4572,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  /* border-color: #101010; */
+  border-color: #101010;
   /* background-color: #FF2A2A; */
   /* z-index: 600000000; */
 }
