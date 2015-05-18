@@ -5,6 +5,8 @@
 var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
   'phonecatControllers',
+  'buellApp',
+  'foodList'
  
 ]);
 

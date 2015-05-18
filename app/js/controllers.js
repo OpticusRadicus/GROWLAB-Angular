@@ -13,9 +13,9 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
 
 phonecatApp.controller('ListCtrl', function ($scope) {
   $scope.Banner = {
-    'name': 'Valentines',
+        'name': 'Valentines',
      'snippet': '...And love for everyone',
-     'imageUrl': 'img/Grow-Labweed.jpg'
+    'imageUrl': 'img/Grow-Labweed.jpg'
   };
 });
 
@@ -23,13 +23,21 @@ phonecatApp.controller('ListCtrl', function ($scope) {
 
 
 
+var buellApp = angular.module('buellApp', []);
 
-// phonecatControllers.controller('CookieListCtrl', function ($scope, $http) {
-//   $http.get('posts/posts.json').success(function(data) {
-//     $scope.post = data;
-//   });
+buellApp.controller('GreetingController', ['$scope', function($scope)
+{
+	$scope.greeting = 'Hola! sinor Jamie, Como estas';
+	}]);
 
-//   $scope.orderProp = 'age';
-// });
+
+var foodList = angular.module('foodList', []);
+foodList.controller('CookieListCtrl', function ($scope, $http) {
+  $http.get('posts/posts.json').success(function(data) {
+    $scope.post = data;
+  });
+
+  $scope.orderProp = 'age';
+});
 
 
