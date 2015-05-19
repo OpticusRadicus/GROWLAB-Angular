@@ -6,7 +6,7 @@ var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
   'phonecatControllers',
   'buellApp',
-  'foodList'
+  'foodList',
  
 ]);
 
@@ -27,6 +27,9 @@ phonecatApp.config(['$routeProvider',
       }). 
            when('/Product1', {
         templateUrl: 'partials/Product1.html'
+      }). 
+           when('/cookie-menu', {
+        templateUrl: 'partials/cookieList.html'
       }). 
       otherwise({
         redirectTo: '/homebase'
