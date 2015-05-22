@@ -4,6 +4,7 @@
 
 var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
+  'phonecatAnimations',
   'phonecatControllers',
   'buellApp',
   'foodList',

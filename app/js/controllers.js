@@ -23,7 +23,6 @@ phonecatApp.controller('ListCtrl', function ($scope) {
 
 
 var buellApp = angular.module('buellApp', []);
-
 buellApp.controller('GreetingController', ['$scope', function($scope)
 {
 	$scope.greeting = 'Hola! sinor Jamie, Como estas';
@@ -31,25 +30,14 @@ buellApp.controller('GreetingController', ['$scope', function($scope)
 
 
 var foodList = angular.module('foodList', []);
-
-foodList.controller('menuCookies', ['$scope', '$http', function($scope, $http) {
+foodList.controller('menuCookies', ['$scope', '$http', function($scope, $http) 
+{
   $http.get('posts/posts.json').success(function(data) {
     $scope.posts = data;
   });
 
-  $scope.orderProp = 'age';
+  $scope.orderProp = 'id';
 }]);
-
-// var phonecatApp = angular.module('phonecatApp', []);
-
-// phonecatApp.controller('PhoneListCtrl', ['$scope', '$http',
-//   function ($scope, $http) {
-//     $http.get('phones/phones.json').success(function(data) {
-//       $scope.phones = data;
-//     });
-
-//     $scope.orderProp = 'age';
-//   }]);
 
 
 

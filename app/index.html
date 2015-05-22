@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" ng-app="phonecatApp">
+<meta http-equiv="Cache-Control" content="no-store"/>
 <head>
   <meta charset="utf-8">
   <title>GROW LAB</title>
@@ -36,30 +37,6 @@
 
 <body>
 
-
-
-
-
-<!-- NavBar Main Wrapper --> 
-<div class="mainNavBarWrapper">
-
-<div class="navTopContainer">
- <div class="col-lg-10 col-md-10 col-sm-10 col-sm-8 col-xs-6">
-<!-- <div class="NavBottomRightBox">
-
-
- </div> -->
-
- <div class="NavTopLeft">
- <ul>
-   <li></li>
-   <li></li>
- </ul>
-</div>
-
-</div>
-
-
 <!-- Jquery collapse function for mobile nav bar below -->
 <script>$(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
@@ -67,6 +44,37 @@
     }
 });</script>
 
+
+<div class="row">
+
+<!-- NavBar Main Wrapper --> 
+<div class="mainNavBarWrapper">
+
+ <div class="col-lg-10 col-md-10 col-sm-10 col-sm-8 col-xs-6">
+<!-- <div class="NavBottomRightBox">
+
+
+ </div> -->
+
+ <div class="NavTopLeft">
+             <ul class="pull-left">
+            <li>
+        Search: <input class="SearchHeight" ng-model="query">
+      <!--   Sort by: -->
+        <!-- <select ng-model="orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+        </select> -->
+</li>
+</ul>
+</div>
+
+</div>
+
+
+
+
+<!-- SOCIAL MEDIA Links Below -->
 <div class="col-lg-2 col-md-2 col-sm-5 col-sm-4 col-xs-6">
 <div class="NavTopRightBox inline">
   <ul>
@@ -75,26 +83,23 @@
    <li><img class="facebookIconSprite" src="img/Pintrist-icons.png"></li>
  </ul>
 
-</div>
+</div> <!-- End NavTopRightBox -->
  </div> <!-- end col -->
 
-<!-- end nav top left -->
-
-  </div>
+  </row>
 <!-- end nav top container -->
 
-<!-- Top NavBar -->
 
-
+<!-- ********************************************************** -->
 
 <!-- Spacing problem in Iphone is caused by this bastard below -->
 
-
+<div class="row">
 <nav class="navbar navbar-wrap navbar-inverse header ">
       <div class="heightTall">
 
 
-      <!-- Problem was cause by left margin of 15pxin the navbar-header class -->
+<!-- Problem was cause by left margin of 15pxin the navbar-header class -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -104,9 +109,10 @@
           </button>
         </div>
 
-      <!-- LOGO *******************************************-->
+      <!-- LOGO Below *******************************************-->
 <a class="" href="#/homebase"><img class="logoLocater" src="img/Grow-Lab-Little-Logo.png"></a>
-<!-- LOGO *******************************************-->
+<!-- LOGO Above *******************************************-->
+<!-- NAVBAR Links Below ###########################-->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right NavBkColor">
             <li><a href="#/homebase">HomeBase</a></li>
@@ -115,23 +121,14 @@
             <li><a href="#/warranty">Warranty</a></li>
             <li><a href="#/cookie-menu">Cookie Menu</a></li>
           </ul>
-       
+  
         </div>
-
-
-
-      
       </div>
-
     </nav>
-
 <!-- end Top navbar -->
-
-
-
 </div> 
-<!-- MainNavBarWrapper END -->
-
+<!-- MainNavBarWrapper END *********************************-->
+</div>
 <!-- SPACER -->
 <div class="rowSpace"></div>
 <!-- SPACER -->
@@ -155,8 +152,9 @@
 </div>  -->
 
 <!-- Bottom sticky Footer -->
-<footer class="footer navbar navbar-fixed-bottom" data-target="navbar-collapse-bottom">
   <div class="row">
+<footer class="footer navbar" data-target="navbar-collapse-bottom">
+
 
     <div class="col-md-3 col-sm-4 col-sm-3 sociaIcons">
     <h3 class="text-center">ABOUT</h3>
