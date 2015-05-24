@@ -15,14 +15,19 @@
   {{ greeting }}
 </div>
 
+<div ng-controller="DatepickerDemoCtrl">
+    <pre><em>{{dt | date:'EEEE, MMM, d' }}</em></pre>
+</div>
+
+<div ng-controller="CollapseDemoCtrl">
+  <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
+  <hr>
+  <div collapse="isCollapsed">
+    <div class="well well-lg">Some content</div> 
+  </div>
+</div>
 
           <p class="text-center">
-            All equipment is new and comes with a individual stated manufactures warranty or replacement plan . Allwarranty forms, brochures and manuals are included with your custom lab    
- Our custom labs come with a 3 yrs limited warranty through Grolabusa that covers any building malfunctions not caused from 
-miss use, neglect, or travel. 
-Your trailer is covered by the manufacture for 5 years , for any damages not caused by an incident not related to the manufacturing. 
-Excluding Trailer Tires
-Air conditioning systems are  are installed by licensed and certified technicians and equipment is covered under a 5 year limited warranty.
 
           </p>
           <br>

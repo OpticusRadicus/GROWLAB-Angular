@@ -8,6 +8,8 @@ var phonecatApp = angular.module('phonecatApp', [
   'phonecatControllers',
   'buellApp',
   'foodList',
+  'myApp'
+
  
 ]);
 

@@ -320,7 +320,7 @@ background-color: #222222;
 
   margin-top: 5%;
 
-  margin-right: 24%;
+  /* margin-right: 24%; */
 
   position: relative;
 
@@ -334,7 +334,7 @@ background-color: #222222;
   /* min-width: 1006px; */
   line-height: 40px;
   /* height: 40px; */
-  background-color: #1F456F;
+  background-color: #EDEDED;
   /* background-size: cover; */
   /* border: 2px solid white; */
   border: none;
@@ -446,7 +446,7 @@ float: left;
 /* border-left: #fff; */
 /* border-style: solid; */     
 /* border-left: thick double #ff0000; */
-/* background-color: #FFFFFF; */
+background-color: #D80000;
 /* z-index: 700000000 !important; */
 }
 

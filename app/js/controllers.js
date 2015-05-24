@@ -1,6 +1,7 @@
 'use strict';
 
-/* Controllers */
+
+
 
 var phonecatControllers = angular.module('phonecatControllers', []);
 
@@ -8,6 +9,10 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope',
   function($scope, homebase, mission, contact, warranty, Product1) {
   
   }]);
+
+
+
+
 
 
 phonecatApp.controller('ListCtrl', function ($scope) {
@@ -22,11 +27,16 @@ phonecatApp.controller('ListCtrl', function ($scope) {
 
 
 
+
+
+
 var buellApp = angular.module('buellApp', []);
 buellApp.controller('GreetingController', ['$scope', function($scope)
 {
-	$scope.greeting = 'Hola! sinor Jamie, Como estas';
+	$scope.greeting = 'Hola! sinor Jamie, Como estas. I am a working controller';
 	}]);
+
+
 
 
 var foodList = angular.module('foodList', []);
@@ -36,13 +46,52 @@ foodList.controller('menuCookies', ['$scope', '$http', function($scope, $http)
     $scope.posts = data;
   });
 
-  $scope.orderProp = 'id';
+  $scope.orderProp = 'name';
 }]);
 
 
 
 
 
+var myApp = angular.module('myApp',['ui.bootstrap']);
+
+
+
+myApp.controller('CollapseDemoCtrl', function ($scope) {
+  $scope.isCollapsed = false;
+});
+
+myApp.controller('DatepickerDemoCtrl', function ($scope) {
+  $scope.today = function() {
+    $scope.dt = new Date();
+  };
+  $scope.today();
+
+  $scope.clear = function () {
+    $scope.dt = null;
+  };
+
+
+  $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+  $scope.format = $scope.formats[0];
+
+
+  $scope.getDayClass = function(date, mode) {
+    if (mode === 'day') {
+      var dayToCheck = new Date(date).setHours(0,0,0,0);
+
+      for (var i=0;i<$scope.events.length;i++){
+        var currentDay = new Date($scope.events[i].date).setHours(0,0,0,0);
+
+        if (dayToCheck === currentDay) {
+          return $scope.events[i].status;
+        }
+      }
+    }
+
+    return '';
+  };
+});
 
 
 
